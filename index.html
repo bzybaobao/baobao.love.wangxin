@@ -65,9 +65,9 @@
     <script type="text/javascript" src="./jscss/jquery.min.js"></script>
     <script>
         $(document).ready(function (e) {
-            $(document).scrollTop(3000);
+            $(document).scrollTop(8000);
             /*移动滚动条到最下方*/
-            timer = setInterval("$.change()", 3000);
+            timer = setInterval("$.change()", 1500);
             t = 2;
             $("#t-" + t).fadeIn();
             $(document).click(
@@ -82,8 +82,8 @@
             $.change = function () {
                 t++;
                 if (t <= $(".tittle").length) {
-                    $(".tittle").slideUp(3000).fadeOut();
-                    $("#t-" + t).slideDown(3000).fadeIn();
+                    $(".tittle").slideUp(8000).fadeOut();
+                    $("#t-" + t).slideDown(8000).fadeIn();
                 } else {
                     localStorage["index"] = "1";
                     window.location = "index2.html";
