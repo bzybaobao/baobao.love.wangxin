@@ -82,8 +82,8 @@
             $.change = function () {
                 t++;
                 if (t <= $(".tittle").length) {
-                    $(".tittle").slideUp(1500).fadeOut();
-                    $("#t-" + t).slideDown(1500).fadeIn();
+                    $(".tittle").slideUp(3000).fadeOut();
+                    $("#t-" + t).slideDown(3000).fadeIn();
                 } else {
                     localStorage["index"] = "1";
                     window.location = "index2.html";
